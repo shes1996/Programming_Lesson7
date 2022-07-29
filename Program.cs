@@ -62,4 +62,22 @@ void Zadacha4()
     int second = N % 60;
     Console.WriteLine(N + " секунд = " + hour + ":" + min + ":" + second);
 }
-Zadacha4();
+//Zadacha4();
+
+/* Задача 1. Написать программу, которая определяет, является ли треугольник со сторонами a, b, c равнобедренным.*/
+void Zadacha1_2()
+{
+    Console.WriteLine("Введите сторону a");
+    int sidea = int.Parse(Console.ReadLine());
+    Console.WriteLine("Введите сторону b");
+    int sideb = int.Parse(Console.ReadLine());
+    Console.WriteLine("Введите сторону c");
+    int sidec = int.Parse(Console.ReadLine());
+    if (sidea > 0 && sideb > 0 && sidec > 0)
+    {
+        if ((sidea == sideb) ^ (sidea == sidec) ^ (sideb == sidec)) Console.WriteLine("Тругольник является равнобедренным");
+        else Console.WriteLine("Тругольник не является равнобедренным");
+    }
+    else Console.WriteLine("Одно или несколько чисел введены некорректно");
+}    
+Zadacha1_2();
