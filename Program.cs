@@ -50,4 +50,16 @@ void Zadacha3()
         }
         else Console.WriteLine(sport2 + " " + sport3 + " " + sport1);
 }
-Zadacha3();
+//Zadacha3();
+
+/*Задача 4. Дано N секунд. Вывести время в формате часы:минуты:секунды.
+N = 72334 -> 20:5:34 */
+void Zadacha4()
+{
+    int N = int.Parse(Console.ReadLine());
+    int hour = N / 3600;
+    int min = (N % 3600) / 60;
+    int second = N % 60;
+    Console.WriteLine(N + " секунд = " + hour + ":" + min + ":" + second);
+}
+Zadacha4();
