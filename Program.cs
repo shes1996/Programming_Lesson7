@@ -25,4 +25,29 @@ void Zadacha2()
     }
     else Console.WriteLine("Число " + number2 + " помешается в число " + number1 + " " + number1/number2 + " раз");
 }
-Zadacha2();
+//Zadacha2();
+
+/*Задача 3. На ввод подаётся рост трёх спортсменов. Расположить их от большего к меньшему.*/
+void Zadacha3()
+{
+    Console.WriteLine("Введите рост первого спортсмена");
+    int sport1 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Введите рост второго спортсмена");
+    int sport2 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Введите рост третьего спортсмена");
+    int sport3 = int.Parse(Console.ReadLine());
+    if (sport1 > sport2)
+    {
+        if (sport2 > sport3)
+        {
+            Console.WriteLine(sport1 + " " + sport2 + " " + sport3);
+        }
+        else Console.WriteLine(sport1 + " " + sport3 + " " + sport2);
+    }
+    else if (sport3 > sport2)
+        {
+            Console.WriteLine(sport3 + " " + sport2 + " " + sport1);
+        }
+        else Console.WriteLine(sport2 + " " + sport3 + " " + sport1);
+}
+Zadacha3();
